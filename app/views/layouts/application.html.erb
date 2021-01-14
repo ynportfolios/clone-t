@@ -17,17 +17,14 @@
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#gnavi">
               <span class="sr-only">Clone-T</span>
               <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Clone-T
-            </a>
+            <%= link_to "Clone-T", root_path, class: 'navbar-brand' %>
           </div>
           <div id="gnavi" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-              <li><a href="">top</a></li>
-              <li><a href="">menu1</a></li>
-              <li><a href="">menu2</a></li>
+              <li>
+                <%= link_to '一覧表示ページ', blogs_path, class: 'nav-link' %>
+              </li>
             </ul>
           </div>
         </div>
