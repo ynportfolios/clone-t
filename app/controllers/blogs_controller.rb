@@ -18,6 +18,15 @@ class BlogsController < ApplicationController
       end
     end
   end
+  def edit
+  end
+  def update
+    if @blog.update(blog_params)
+      redirect_to blogs_path, notice: "ブログを編集しました！"
+    else
+      render :edit
+    end
+  end
   def destroy
     @blog.destroy
     redirect_to blogs_path, notice:"ブログを削除しました！"
